@@ -21,5 +21,9 @@
 #define LISTENQ	128
 
 size_t readn(int fd, void *buffer, size_t size);
+size_t read_message(int fd, char *buffer, size_t length);
+
+int tcp_server(int port);
+int tcp_client(char *address, int port);
 
 #endif
